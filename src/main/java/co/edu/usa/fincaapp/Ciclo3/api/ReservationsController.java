@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import co.edu.usa.fincaapp.Ciclo3.entidades.Reservations;
+import co.edu.usa.fincaapp.Ciclo3.reportes.ContadorClientes;
+import co.edu.usa.fincaapp.Ciclo3.reportes.StatusReservas;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -54,5 +57,20 @@ public class ReservationsController {
         return ReservationsServicio.deleteReservation(id);
     }
 
+    @GetMapping("/report-status")
+    public StatusReservas getReservas(){
+        return ReservationsServicio.getReporteStatusReservaciones();
+    }
+    
+    @GetMapping("/report-dates/{dateOne}/{dateTwo}")
+    public List<Reservations> getReservasTiempo (@PathVariable("dateOne")String dateOne, @PathVariable("dateTwo")String dateTwo){
+        return ReservationsServicio.getReportesTiempoReservaciones(dateOne, dateTwo);
+    }
+    
+    @GetMapping("/report-clients")
+    public List<ContadorClientes> getClientes(){
+        return ReservationsServicio.servicioTopClientes();
+    
+    }
 
 }
