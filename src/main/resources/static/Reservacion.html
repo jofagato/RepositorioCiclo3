@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hacer Reservación</title>
+  <link rel="stylesheet" href="estilos\styleindex.css">
+  <link rel="stylesheet" href="./estilos/estilofechas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-withe bg-white">
+      <div class="container-fluid">
+        <div class="img">
+          <img src="images\cabana.svg"
+            style="height: 28px; width: 28px; float:left; margin-left: 31px;">
+        </div>
+    
+        <div id="titulo">
+          <h1>MiFinca.com</h1>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 90px;
+        margin-top: 12px;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://193.123.110.232:8080/front/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quienes Somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Transacciones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="http://193.123.110.232:8080/front/Crear_finca.html">Crear
+                    Finca</a></li>
+                <li><a class="dropdown-item" href="http://193.123.110.232:8080/front/Crear_usuario.html">Crear Usuario</a>
+                </li>
+                <li><a class="dropdown-item" href="http://193.123.110.232:8080/front/Dejar_Mensaje.html">Dejar un Mensaje</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Hacer Reservación</a></li>
+                <li><a class="dropdown-item" href="http://193.123.110.232:8080/front/Calificacion.html">Calificación</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contáctanos</a>
+            </li>
+          </ul>
+          <img id="bandera" src="https://cdn-icons-png.flaticon.com/512/323/323343.png" alt="">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="¿Algo especial?" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+              
+  </div>
+  <div class="container">
+  <div class="row">
+      <div class="col">
+          
+      </div>
+  </div>
+
+</div>
+
+
+
+<!-- Modal ver fincas -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Listado de Reservaciones</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="reservacionEditada">
+          <img src="./images/pulgar-hacia-abajo (1).png" style="width: 30px; float: left; margin-right: 10px;" alt="">
+          <p style="margin-top: 6px; margin-left: 20px;">Muy bien!!! tu reserva se editó correctamente</p>
+        </div>
+        <table id="tabla-farm" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Fecha Inicial</th>
+                  <th scope="col">Fecha Final</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+      </div>
+      <div class="modal-footer">
+        
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col col-lg-4" style="margin-left: 200px; margin-top: 70px; float: left;">
+  <p style="font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-bottom: 40px;">Ingresa las fechas y haz clic en <b>Guardar</b></p>
+          <form id="farm-form" class="row g-3">
+              <div class="col-md-12">
+                <label for="dateofbirth">Fecha Inicial</label><br>
+                <input type="date" name="dateofbirth" id="inicial"><br><br>
+              
+              <label for="dateofbirth">Fecha Final</label><br>
+                <input type="date" name="dateofbirth" id="final">
+              </div>
+              
+              <label for="status">Estatus</label>
+              <input type="text" name="dateofbirth" id="estatus" style="width: 191px;
+              margin-left: 8px;">
+
+             
+            </form>
+      </div>
+      <img src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849804_960_720.jpg" class="img-fluid" style="width: 600px; margin-top: 85px; margin-left: 85px;" alt="...">
+<div class="col col-lg-4" style="margin-left: 200px; margin-top: -25px; ">     
+<button type="button" id="crearReserva">
+  Crear Reserva
+</button>
+
+<button type="button" onclick="ocultarAviso()" id="verReserva" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Ver Reservas
+</button>
+</div>
+
+<div id="reservacionCreada" style="margin-left: 200px; margin-top: 35px; visibility: hidden;">
+  <img src="./images/pulgar-hacia-abajo (1).png" style="width: 30px; float: left; margin-right: 10px;" alt="">
+  <p style="margin-top: 6px; margin-left: 20px;">Muy bien!!! Reservación creada con éxito</p></div>
+<!-- Modal crear fincas -->
+<div class="modal fade" id="fincaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Agregar Reserva</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+      
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <button  type="button" class="btn btn-success">Crear</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal editar fincas -->
+<div class="modal fade" id="editarfincaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar finca</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="container">
+              <form id="farm-form" class="row g-3">
+                  <div class="col-12">
+                    <label for="dateofbirth">Fecha Inicial</label><br>
+                    <input type="date" id="#editarInicial"><br><br>
+  
+                    <label for="dateofbirth">Fecha Final</label><br>
+                    <input type="date"  id="eFinal"><br><br>
+  
+                    <label for="status">Estatus</label><br>
+                    <input type="text"  id="eEstatus" style="width: 191px;"><br>
+      
+                    <input type="hidden" id="einputID" >
+                 
+                </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="add-btn" type="button" class="btn btn-success">Editar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script type="text/javascript" src="./js/misFuncionesReservas.js"></script>
+      <div class="d-flex flex-column h-100">
+
+          
+        
+    </div>
+  </body>

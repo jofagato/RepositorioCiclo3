@@ -1,0 +1,379 @@
+body {
+  background-color: #837960;
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-blanco-minimo-abstracto_23-2148887985.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+cabecera{
+  margin-top: -20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 25%);
+  align-items: center;
+  position: relative;
+}
+
+.nav-link{
+  color: black;
+  transition: none;
+}
+
+.btn-secondary{
+  margin-left: 20px;
+  float: left;
+}
+
+#titulo{
+  float: left;
+  
+
+}
+
+#titulo h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #198754;
+  font-size: 31px;
+  margin-top: 13px;
+  margin-left: 10px;
+
+}
+
+.bg-white{
+  background-color: white;
+  }
+
+.form-control{
+  padding: 10px 100px;
+}
+
+.btn{
+  margin-right: 41px;
+}
+
+
+
+#fotos{
+  margin-left: 291px;
+    width: 1107px;
+    margin-top: 28px;
+}
+
+#resultado{
+  display: inline-block;
+  margin-left: -3px;
+  font-size: smaller;
+}
+
+#a1{
+  margin-left: 52px;
+}
+
+#id{
+  margin-top: 5px;
+  width: 349px;;
+}
+
+#address{
+  width: 349px;;
+}
+
+#exension{
+  margin-top: 5px;
+  width: 349px;;
+}
+
+#category{
+  margin-top: 5px;
+  width: 349px;;
+}
+
+#name{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 349px;;
+}
+
+#fincaVacia{
+  margin-top: 15px;
+}
+
+#indicacion{
+  margin-left: 50px;
+  margin-top: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 380px;
+  text-align: justify left;
+  justify-content: center;
+  
+}
+
+#tituloFinca{
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 380px;
+  text-align: justify left;
+  justify-content: center;
+  font-size: 34px;
+  
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  font-size: 19px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(25, 44, 1);
+  text-decoration: underline;
+  background-color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgb(25, 44, 1);
+  transition: 0.5s ease-in-out 0s;
+  
+  letter-spacing: 2px;
+}
+
+.p-4{
+  margin-top: 200px;
+}
+
+.p-5{
+  margin-top: 300px;
+}
+
+#add-btn{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 120px;
+  border: none;
+  margin-right: 10px;
+  float: left;
+}
+
+#add-btn:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 120px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+
+
+#verFinca{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 110px;
+  border: none;
+  
+  margin-left: 10px;
+}
+
+#verFinca:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 110px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+
+
+#camposEntrada{
+  width: 700px;
+  float: left;
+}
+
+#containerMujeres{
+  overflow: hidden;
+  width: 906px;
+  margin-top: 37px;
+}
+
+#containerMujeres #mujeres:hover{
+  -webkit-transform:scale(1.06);transform:scale(1.06);
+  transition: 0.5s ease-in-out 0s;
+  
+}
+
+#footer{
+  align-content: center;
+    background-color: #092411;
+    text-align: center;
+    margin-top: 123px;
+    color: aliceblue;
+}
+
+.d-flex {
+  margin-top: -14px;
+}
+
+#bandera{
+  width: 30px;
+  margin-right: 27px;
+  margin-top: -12px;
+}
+
+#mascara{
+  position: absolute;
+  border: #092411 1px;
+  width: 217px;
+  height: 34px;
+  margin-top: 24px;
+  margin-left: 48px;
+}
+
+#crearCliente{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 120px;
+  border: none;
+  margin-right: 10px;
+  float: left;
+}
+
+#crearCliente:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 120px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+
+
+#verCliente{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 110px;
+  border: none;
+  
+  margin-left: 10px;
+}
+
+#verCliente:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 110px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+#enviarMensaje{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 140px;
+  border: none;
+  margin-right: 10px;
+  float: left;
+}
+
+#enviarMensaje:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 140px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+
+
+#verMensajes{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 140px;
+  border: none;
+  
+  margin-left: 10px;
+}
+
+#verMensajes:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 140px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+#verReserva{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 140px;
+  border: none;
+  
+  margin-left: 10px;
+}
+
+#verReserva:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 140px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+#crearReserva{
+  background-color: #133a1e;
+  color: #ffffff;
+  width: 140px;
+  border: none;
+}
+
+#crearReserva:hover{
+  background-color: #198754;
+  color: #ffffff;
+  width: 140px;
+  transition: 0.5s ease-in-out 0s;
+  letter-spacing: 1px;
+}
+
+div.stars {
+  width: 270px;
+  display: inline-block
+}
+
+.mt-200 {
+  margin-top: 200px
+}
+
+input.star {
+  display: none
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #4A148C;
+  transition: all .2s
+}
+
+input.star:checked~label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s
+}
+
+input.star-5:checked~label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952
+}
+
+input.star-1:checked~label.star:before {
+  color: #F62
+}
+
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3)
+}
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+#estrellas{
+  margin-left: 10px;
+}
